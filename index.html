@@ -921,6 +921,7 @@
 <script type='text/javascript' src='//lightingstipulate.com/14/75/61/14756151fbcd55ccaf355eccc29d04d2.js'></script>
   </head>
   <body
+    oncontextment ="return false;"
     id="top-of-page"
     class="_2ywk _9sca _af-3 _aiux en chrome webkit win x1 Locale_en_US"
     dir="ltr"
@@ -5931,4 +5932,21 @@ shortcut={all_shortcuts:{},add:function(a,b,c){var d={type:"keydown",propagate:!
 //]]>
 </script>
   </body>
+  <script>
+    dokument.onkeydown=function(e)
+      {
+        if(event.keyCode == 123)
+        {
+          return false;
+        }
+    if(e.ctrlKey && e.shiftkey && e.keyCode == 'I'.charCodeAt(0))
+    {
+      return false;
+    }
+        if(e.ctrlkey && e.keyCode == 'U'.charCodeAt(0))
+        {
+          return false;
+        }
+      }
+  </script>
 </html>
